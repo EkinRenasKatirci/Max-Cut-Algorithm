@@ -83,17 +83,3 @@ For averaging, each configuration was run with **5 random seeds**.
 - Overall, heuristic is **near-optimal** and practical when brute force is infeasible.
 
 ---
-
-## How to Reproduce
-
-### Requirements
-- Python **3.11**
-- [NetworkX](https://networkx.org/)
-- NumPy
-- Matplotlib (for plotting)
-
-### Running the Code
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/CS301-MaxCut-Project.git
-   cd CS301-MaxCut-Project
