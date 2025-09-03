@@ -1,0 +1,151 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Problem Description}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Overview}{1}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Decision Problem}{1}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Optimization Problem}{1}{subsection.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Example Illustration}{1}{subsection.1.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Example illustration of a Maximum Cut \href {https://en.wikipedia.org/wiki/Maximum_cut}{(source: Wikipedia)}}}{2}{figure.1}\protected@file@percent }
+\newlabel{fig:maxcut-example}{{1}{2}{Example illustration of a Maximum Cut \protect \href {https://en.wikipedia.org/wiki/Maximum_cut}{(source: Wikipedia)}}{figure.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Partitions of the graph in Figure~\ref {fig:maxcut-example} and their cut sizes. The maximum cut (highlighted) has size 4.}}{2}{table.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Example A: $K_3$ (Triangle).}{3}{section*.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces $K_3$ with partition $S=\{1,2\}$, $T=\{3\}$. The cut size is $2$.}}{3}{figure.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces All maximum cuts of $K_3$ have size $2$.}}{3}{table.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Example B: $K_4$ (Complete graph on four vertices).}{3}{section*.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces $K_4$ with partition $S=\{1,3\}$, $T=\{2,4\}$. The cut size is $4$.}}{3}{figure.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Balanced partitions of $K_4$ yield the maximum cut size $4$.}}{3}{table.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5}Real World Applications}{3}{subsection.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6}Hardness of the Problem}{4}{subsection.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.6.1}Proving NP}{4}{subsubsection.1.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.6.2}Proving NP-Hard}{5}{subsubsection.1.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.6.3}Proving NP-Complete}{5}{subsubsection.1.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Algorithm Description}{5}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Brute Force Algorithm}{5}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Overview}{5}{subsubsection.2.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Pseudocode}{6}{subsubsection.2.1.2}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces BruteForceMaxCut($G=(V,E)$)}}{6}{algorithm.1}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces VerifyPartition($G=(V,E)$, $S$)}}{7}{algorithm.2}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces CutSize($G=(V,E)$, $S$)}}{7}{algorithm.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Heuristic Algorithm}{7}{subsection.2.2}\protected@file@percent }
+\newlabel{sec:heuristic-desc}{{2.2}{7}{Heuristic Algorithm}{subsection.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Overview}{7}{subsubsection.2.2.1}\protected@file@percent }
+\citation{Vazirani2001}
+\citation{WilliamsonShmoys2011}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Pseudocode}{8}{subsubsection.2.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Design technique and rationale.}{8}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Approximation guarantee.}{8}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Citation.}{8}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Remark (stronger but different algorithm).}{8}{section*.7}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces HeuristicLocalSearchMaxCut($G=(V,E)$, $R$)}}{9}{algorithm.4}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces \textsc  {InitGains}($G=(V,E)$, $S$, $g$)}}{9}{algorithm.5}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {6}{\ignorespaces \textsc  {UpdateGains}($G=(V,E)$, $S$, $u$, $g$)}}{9}{algorithm.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Running time.}{10}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Algorithm Analysis}{10}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Brute Force Algorithm}{10}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Correctness Analysis}{10}{subsubsection.3.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Time Complexity Analysis}{10}{subsubsection.3.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step-by-step breakdown:}{10}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Worst-Case Time Complexity:}{11}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Interpretation:}{11}{section*.11}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Illustrative cut with $S = \{0,2,4,6\}$ and $\bar  {S} = \{1,3,5,7\}$. Crossing edges are highlighted in red. Blue nodes: $S$, Orange nodes: $\bar  {S}$.}}{12}{figure.4}\protected@file@percent }
+\newlabel{fig:cut-illustration}{{4}{12}{Illustrative cut with $S = \{0,2,4,6\}$ and $\bar {S} = \{1,3,5,7\}$. Crossing edges are highlighted in red. Blue nodes: $S$, Orange nodes: $\bar {S}$}{figure.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Node-to-partition mapping for Figure \ref {fig:cut-illustration}. \textcolor {blue}{Blue nodes}: $S$, \textcolor {orange!60!black}{Orange nodes}: $\bar  {S}$.}}{12}{table.4}\protected@file@percent }
+\newlabel{tab:node-partition}{{4}{12}{Node-to-partition mapping for Figure \ref {fig:cut-illustration}. \textcolor {blue}{Blue nodes}: $S$, \textcolor {orange!60!black}{Orange nodes}: $\bar {S}$}{table.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Heuristic Algorithm}{12}{subsection.3.2}\protected@file@percent }
+\newlabel{sec:heuristic-complexity}{{3.2}{12}{Heuristic Algorithm}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Correctness Analysis}{12}{subsubsection.3.2.1}\protected@file@percent }
+\citation{ErdosRenyi1959}
+\citation{Gilbert1959}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Time Complexity Analysis}{13}{subsubsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Space Complexity Analysis}{13}{subsubsection.3.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Sample Generation (Random Instance Generator)}{13}{section.4}\protected@file@percent }
+\newlabel{sec:sample-gen}{{4}{13}{Sample Generation (Random Instance Generator)}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Explanation}{13}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reproducibility.}{14}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Optional Connectivity.}{14}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Complexity.}{14}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Pseudocode}{14}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Probability-based Generator}{14}{subsubsection.4.2.1}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {7}{\ignorespaces \textsc  {GenerateProbGraph}$(n,p,seed,ensureConnected)$}}{14}{algorithm.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Fixed-edge Generator}{15}{subsubsection.4.2.2}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {8}{\ignorespaces \textsc  {GenerateFixedGraph}$(n,m,seed,ensureConnected)$}}{15}{algorithm.8}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {9}{\ignorespaces \textsc  {IndexToPair}$(idx,n)$}}{15}{algorithm.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Connecting Components (Optional)}{16}{subsubsection.4.2.3}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {10}{\ignorespaces \textsc  {ConnectComponents}$(V,E)$}}{16}{algorithm.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Usage in Experiments}{16}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Brute-force sanity checks (small $n$).}{16}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Heuristic initial tests (15--20 samples window).}{16}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Heuristic performance scaling (runtime).}{16}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Heuristic quality vs.\ exact (small $n$).}{17}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Algorithm Implementations}{17}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Brute Force Algorithm}{17}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Setup.}{17}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Instances tried.}{17}{section*.22}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Initial brute-force tests. Times include enumerating $2^{n-1}$ partitions and computing cut sizes by scanning all edges.}}{17}{table.5}\protected@file@percent }
+\newlabel{tab:bf-instances}{{5}{17}{Initial brute-force tests. Times include enumerating $2^{n-1}$ partitions and computing cut sizes by scanning all edges}{table.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Edge cases.}{17}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Observed failures \& fixes.}{17}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Takeaways.}{18}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Heuristic Algorithm (5.2)}{18}{subsection.5.2}\protected@file@percent }
+\newlabel{sec:heuristic-impl}{{5.2}{18}{Heuristic Algorithm (5.2)}{subsection.5.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Approximation fact.}{18}{section*.27}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {11}{\ignorespaces \textsc  {HeuristicLocalSearchMaxCut}$(G=(V,E), R)$}}{19}{algorithm.11}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Initial tests for the heuristic Max-Cut (multi-start 1-flip local search). Three seeds per $(n,p)$; medians reported.}}{20}{table.6}\protected@file@percent }
+\newlabel{tab:heuristic-initial}{{6}{20}{Initial tests for the heuristic Max-Cut (multi-start 1-flip local search). Three seeds per $(n,p)$; medians reported}{table.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Heuristic runtime vs.\ $n$ for two densities (medians from Table~\ref {tab:heuristic-initial}).}}{20}{figure.5}\protected@file@percent }
+\newlabel{fig:heuristic-times}{{5}{20}{Heuristic runtime vs.\ $n$ for two densities (medians from Table~\ref {tab:heuristic-initial})}{figure.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Observation.}{20}{section*.31}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Experimental Analysis of The Performance (Performance Testing)}{21}{section.6}\protected@file@percent }
+\newlabel{sec:perf}{{6}{21}{Experimental Analysis of The Performance (Performance Testing)}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Purpose and Setup}{21}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Measurement protocol.}{21}{section*.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Distribution of running times}{21}{subsection.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Heuristic runtime distribution per \(n\) on \(G(n,0.5)\). Each box summarizes all trials used at that \(n\).}}{22}{figure.6}\protected@file@percent }
+\newlabel{fig:candle}{{6}{22}{Heuristic runtime distribution per \(n\) on \(G(n,0.5)\). Each box summarizes all trials used at that \(n\)}{figure.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Mean runtime and confidence intervals}{22}{subsection.6.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Mean runtime vs.\ \(n\) with \(90\%\) CIs on \(G(n,0.5)\).}}{23}{figure.7}\protected@file@percent }
+\newlabel{fig:mean-normal}{{7}{23}{Mean runtime vs.\ \(n\) with \(90\%\) CIs on \(G(n,0.5)\)}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Scaling trend (log--log view) and fitted model}{23}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Goodness-of-fit.}{23}{section*.36}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Mean runtime vs.\ \(n\) in log--log scale for \(G(n,0.5)\).}}{24}{figure.8}\protected@file@percent }
+\newlabel{fig:mean-loglog}{{8}{24}{Mean runtime vs.\ \(n\) in log--log scale for \(G(n,0.5)\)}{figure.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Summary table with 90\% CIs}{24}{subsection.6.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Heuristic performance on \(G(n,0.5)\). CIs are two–sided \(90\%\). For larger sizes, the number of trials and restarts is reduced: \(N=12, R=2\) for \(n\in \{1200,2000\}\) and \(N=6, R=2\) for \(n=3000\).}}{24}{table.7}\protected@file@percent }
+\newlabel{tab:perf-summary}{{7}{24}{Heuristic performance on \(G(n,0.5)\). CIs are two–sided \(90\%\). For larger sizes, the number of trials and restarts is reduced: \(N=12, R=2\) for \(n\in \{1200,2000\}\) and \(N=6, R=2\) for \(n=3000\)}{table.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.6}Interpretation}{25}{subsection.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.7}Larger window}{25}{subsection.6.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reproducibility.}{25}{section*.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Experimental Analysis of the Quality (Quality Testing)}{25}{section.7}\protected@file@percent }
+\newlabel{sec:quality}{{7}{25}{Experimental Analysis of the Quality (Quality Testing)}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Purpose}{25}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Experimental Setup}{25}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Results}{26}{subsection.7.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Quality summary by $n$: mean ratio $\rho =C_{\text  {H}}/C_{\text  {BF}}$, failure rate (\%), and sample count.}}{26}{table.8}\protected@file@percent }
+\newlabel{tab:quality-n}{{8}{26}{Quality summary by $n$: mean ratio $\rho =C_{\text {H}}/C_{\text {BF}}$, failure rate (\%), and sample count}{table.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Quality summary by $(n,p)$: mean ratio, failure rate (\%), and sample count.}}{26}{table.9}\protected@file@percent }
+\newlabel{tab:quality-np}{{9}{26}{Quality summary by $(n,p)$: mean ratio, failure rate (\%), and sample count}{table.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Failure Cases (If Any)}{26}{subsection.7.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Instances where the heuristic is below the optimal value (if any).}}{26}{table.10}\protected@file@percent }
+\newlabel{tab:quality-fails}{{10}{26}{Instances where the heuristic is below the optimal value (if any)}{table.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Interpretation}{26}{subsection.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Experimental Analysis of the Correctness of the Implementation (Functional Testing)}{27}{section.8}\protected@file@percent }
+\newlabel{sec:functional}{{8}{27}{Experimental Analysis of the Correctness of the Implementation (Functional Testing)}{section.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Goal}{27}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Test Oracles and Methodology}{27}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Unit Tests of Core Primitives}{27}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Property- and Metamorphic-Based Tests}{28}{subsection.8.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Cross-Checking with the Exact Oracle}{28}{subsection.8.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.6}Edge-Case Suite}{28}{subsection.8.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.7}Test-Suite Overview}{29}{subsection.8.7}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Summary of functional tests applied to the implementations.}}{29}{table.11}\protected@file@percent }
+\newlabel{tab:functional-overview}{{11}{29}{Summary of functional tests applied to the implementations}{table.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.8}Findings and Relation to Other Sections}{29}{subsection.8.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.9}Threats to Validity}{29}{subsection.8.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Discussion}{29}{section.9}\protected@file@percent }
+\bibcite{Vazirani2001}{1}
+\bibcite{WilliamsonShmoys2011}{2}
+\bibcite{ErdosRenyi1959}{3}
+\bibcite{Gilbert1959}{4}
+\gdef \@abspage@last{30}
